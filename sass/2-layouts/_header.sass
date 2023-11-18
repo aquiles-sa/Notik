@@ -1,0 +1,48 @@
+@use '../1-base/_variables'
+@import 'layout-features'
+
+header
+    width: 100%
+    height: 6rem
+    
+    background-color: variables.$header-bg
+    padding: 0 3rem
+
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+    i
+        font-size: 2.5rem
+        color: variables.$icons-colors
+
+    
+    li
+        display: inline-flex
+        margin-left: 1rem
+
+        a[href="#"]
+            color: variables.$white
+            position: relative
+            font-size: 1.1rem
+
+            @include hover-links-footer(#fffb10)
+
+.main-banner-pic
+    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)),url(../assets/banner.jpg) no-repeat center
+    background-size: cover
+
+    padding: 12rem 0
+    text-align: center
+
+         
+    h1, h3
+        color: variables.$headingText-color
+        
+    h1
+        font-size: 5rem
+        @include first-letter
+
+
+    h3
+        font-size: 1.8rem
