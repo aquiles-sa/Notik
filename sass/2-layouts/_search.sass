@@ -1,0 +1,46 @@
+@use '../1-base/_variables'
+@import 'layout-features'
+
+.search-content
+    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('../assets/search_bg.jpg') no-repeat center
+    background-size: cover
+    color: variables.$white
+
+    padding: 5rem
+
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    gap: 1rem
+
+    &-head
+        font-size: 2.3em
+        color: variables.$icons-colors
+
+    &-paragraph
+        font-size: 1.5em
+
+    form
+        text-align: center
+
+    &-country
+        display: block
+        width: 25rem
+
+        margin: 1rem 0
+        padding: 1rem
+
+        border-radius: 1rem
+
+    &-btn
+        width: 10rem
+        padding: 1rem
+
+        cursor: pointer     
+        border-radius: 1rem
+
+        font-size: 1em
+        transition: .3s
+
+        
