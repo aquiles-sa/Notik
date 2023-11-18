@@ -1,0 +1,61 @@
+@use '../1-base/_variables'
+@import 'layout-features'
+
+.places-texts-header
+    padding: 2rem 0
+    text-align: center
+
+    h2
+        font-size: 2.5em
+
+    p
+        font-size: 1em 
+
+    .places-content
+        display: flex
+        justify-content: space-around
+
+        width: 90%
+        margin: 50px auto
+
+        &-box
+            width: 13rem
+            height: 25rem
+
+            padding: 1rem
+
+            position: relative
+            border-radius: 1rem
+
+            @extend %centralize-background
+            @extend %photo-cover
+
+        @for $i from 1 through 4
+            #photo-#{$i}
+                background-image: url('../assets/bg-#{$i}.jpg')
+                
+            p
+                line-height: 20px
+
+            &-cover
+                position: absolute
+                top: 0
+                left: 0
+
+                width: 100%
+                height: 100%
+
+                padding: 2rem
+                background-color: #0000009e
+
+                text-align: center
+                box-shadow: 0 2px 2px #1717179f
+
+                border: 3px solid variables.$icons-colors
+                transition: .3s
+                border-radius: 1rem
+
+                h1
+                    font-size: 1.6em
+                    margin-bottom: 0.5rem
+                    color: variables.$icons-colors
