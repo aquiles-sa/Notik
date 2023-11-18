@@ -1,0 +1,34 @@
+@use '../1-base/_variables'
+@import 'layout-features'
+    
+.services-area
+    padding: 2rem 0
+
+    &-list
+        display: flex
+        justify-content: center
+
+        padding: 0 1rem
+
+        li  
+            text-align: center
+            padding: 1.5rem
+
+            margin: 1.2rem 1rem
+            border: 1px solid variables.$pictures-containerBg
+
+            transition: .4s
+            
+            i
+                font-size: 3em
+                color: variables.$icons-colors
+                text-shadow: 0 1px 1px variables.$black
+
+            h1
+                margin: 1rem 0
+
+            p
+                font-size: 1rem
+
+            &:hover
+                @include hover-box-services
