@@ -1,0 +1,92 @@
+@use '../1-base/_variables'
+
+@mixin hover-links-footer($line-color)
+    &::after
+        content: ''
+
+        position: absolute
+        background-color: $line-color
+        
+        width: 0
+        height: 2px
+
+        left: 0
+        bottom: -10px
+
+        transition: .3s
+
+    &:hover::after
+        width: 100%
+
+@mixin first-letter
+    &::first-letter
+        color: variables.$icons-colors
+        font-family: "Times New Roman"
+
+@mixin hover-box-services
+    &:hover
+        transform: translate(0, -5px)
+        box-shadow: 0 2px 2px variables.$description-color        
+
+%btn-header
+    color: variables.$black
+    background-color: variables.$buttons-bg
+
+    padding: 0.8rem 1rem
+    border-radius: 0.5rem
+
+%btn-header-hover
+    background: transparent
+    color: variables.$icons-colors
+
+    box-shadow: 0 3px 0 variables.$icons-colors
+    border: 1px solid variables.$icons-colors
+
+%dark-btn
+    font-size: 1rem
+    line-height: 1em
+
+    color: variables.$icons-colors
+    border: 1px solid variables.$icons-colors
+
+    padding: 1rem 
+    margin-left: 0.2rem
+
+    cursor: pointer
+    border-radius: 50%
+
+    transition: .2s
+
+    &:active
+        background-color: variables.$icons-colors
+        color: variables.$black
+
+%centralize-background
+    background-position: center
+    background-size: cover
+
+%photo-cover
+    .places-content-box, .places-content-cover, p
+        opacity: 0
+
+    &:hover
+        .places-content-box, .places-content-cover, p
+            opacity: 1
+            color: #fff    
+ 
+.register-btn
+    @extend %btn-header
+
+    &:hover
+        @extend %btn-header-hover
+
+#change-theme
+    @extend %dark-btn                      
+
+.search-content-btn
+    background: variables.$icons-colors
+
+    &:hover
+        @extend %btn-header-hover
+    &:active
+        background: #d4fe0035    
