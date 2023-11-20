@@ -5,3 +5,54 @@ footer
     background-color: variables.$footer-bgColor
     color: variables.$white
     padding: 5rem 2rem
+
+    display: flex
+    justify-content: space-around
+
+    
+    article
+        display: flex
+        gap: 9rem
+
+    .links-content
+        border-left: 1px solid variables.$icons-colors
+        padding-left: 0.8rem
+
+        ul, li > a
+            color: variables.$description-color
+            transition: .3s
+
+            &:hover
+                color: variables.$white
+        li
+            line-height: 1.5rem
+
+        &-title
+            margin-bottom: 1rem
+        
+    .social-links-footer > ul
+         display: flex
+         justify-content: center
+
+         margin: 1rem 0
+         padding-top: 1rem
+         
+         border-top: 2px solid variables.$icons-colors
+
+         li
+            text-align: center
+            margin: 0 0.5rem
+
+            a
+             font-size: 1.4rem
+
+         .middle-link
+            border-left: 1px solid variables.$icons-colors
+            border-right: 1px solid variables.$icons-colors
+
+            padding: 0 1rem
+
+
+
+
+         
