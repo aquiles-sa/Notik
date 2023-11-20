@@ -23,10 +23,13 @@
         color: variables.$icons-colors
         font-family: "Times New Roman"
 
-@mixin hover-box-services
+@mixin hover-box-services($color-shadow)
     &:hover
         transform: translate(0, -5px)
-        box-shadow: 0 2px 2px variables.$description-color        
+        box-shadow: 0 2px 2px $color-shadow        
+
+@mixin color-border($color-border)
+    border: 1px solid $color-border    
 
 %btn-header
     color: variables.$black
@@ -73,7 +76,8 @@
         .places-content-box, .places-content-cover, p
             opacity: 1
             color: #fff    
- 
+
+
 .register-btn
     @extend %btn-header
 
