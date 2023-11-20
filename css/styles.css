@@ -478,6 +478,48 @@ footer {
   background-color: #1a1a1a;
   color: #fff;
   padding: 5rem 2rem;
+  display: flex;
+  justify-content: space-around;
+}
+footer article {
+  display: flex;
+  gap: 9rem;
+}
+footer .links-content {
+  border-left: 1px solid rgba(255, 251, 16, 0.8666666667);
+  padding-left: 0.8rem;
+}
+footer .links-content ul, footer .links-content li > a {
+  color: #b8b8b8;
+  transition: 0.3s;
+}
+footer .links-content ul:hover, footer .links-content li > a:hover {
+  color: #fff;
+}
+footer .links-content li {
+  line-height: 1.5rem;
+}
+footer .links-content-title {
+  margin-bottom: 1rem;
+}
+footer .social-links-footer > ul {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+  padding-top: 1rem;
+  border-top: 2px solid rgba(255, 251, 16, 0.8666666667);
+}
+footer .social-links-footer > ul li {
+  text-align: center;
+  margin: 0 0.5rem;
+}
+footer .social-links-footer > ul li a {
+  font-size: 1.4rem;
+}
+footer .social-links-footer > ul .middle-link {
+  border-left: 1px solid rgba(255, 251, 16, 0.8666666667);
+  border-right: 1px solid rgba(255, 251, 16, 0.8666666667);
+  padding: 0 1rem;
 }
 
 .dark-theme {
